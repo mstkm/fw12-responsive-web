@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar-logo">
+                <img src="./assets/logo.png" alt="Tikitz">
+            </div>
+            <div class="nav-bar-list">
+                <a href="home-myaccount.html">Home</a>
+                <a href="view-all.html">List Item</a>
+            </div>
+            <div class="nav-search">
+                <div>
+                    <i data-feather="search"></i>
+                </div>
+                <div class="drop-search">
+                    <div class="drop-search-icon"><i data-feather="search"></i></div>
+                    <input type="text" placeholder="Search Movie Name ...">
+                </div>
+            </div>
+            <div class="nav-bar-photo-profile">
+                <div>
+                    <img src="./assets/photo-profile.png" alt="Photo Profile">
+                </div>
+                <div class="drop-profile">
+                    <div>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                    <div>
+                        <a href="home.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-dropdown">
+                <i data-feather="menu"></i>
+                <div class="content-menu-dropdown">
+                    <div class="dropdown-search">
+                        <div class="dropdown-search-box">
+                            <div class="dropdown-search-icon"><i data-feather="search"></i></div>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="menu-item"><a href="home-myaccount.html">Home</a></div>
+                    <div class="menu-item"><a href="view-all.html">List Movie</a></div>
+                    <div class="menu-item"><a href="profile.html">Profile</a></div>
+                    <div class="menu-item"><a href="signin.html">Logout</a></div>
+                    <div><span>© 2020 Tickitz. All Rights Reserved.</span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="desc-movie">
+        <div>
+            <div class="desc-banner">
+                <img src="./assets/spiderman.png" alt="Spiderman">
+            </div>
+        </div>
+        
+        <div class="desc-details">
+            <div class="desc-details-title">
+                <h1>Spider-Man: Homecoming</h1>
+                <h2>Adventure, Action, Sci-Fi</h2>
+            </div>
+            <div class="desc-flex-col">
+                <div class="desc-flec-row">
+                    <div class="desc-flex-item1">
+                        <p class="grey">Release date</p>
+                        <p class="black">June 28, 2017</p>
+                    </div>
+                    <div class="desc-flex-item2">
+                        <p class="grey">Directed by</p>
+                        <p class="black">Jon Watss</p>
+                    </div>
+                </div>
+                <div class="desc-flec-row">
+                    <div class="desc-flex-item1">
+                        <p class="grey">Duration</p>
+                        <p class="black">2 hours 13 minutes </p>
+                    </div>
+                    <div class="desc-flex-item2">
+                        <p class="grey">Casts</p>
+                        <p class="black">Tom Holland, Michael Keaton, Robert Downey Jr., ...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="desc-synopsis">
+                <h3>Synopsis</h3>
+                <p>Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="showtimes-tickets">
+        <div class="showtimes-tickets-teks1">
+            <span>Showtimes and Tickets</span>
+        </div>
+        <div class="showtimes-date-place">
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="place">
+                <select name="" id="">
+                    <option value="">Purwokerto</option>
+                </select>
+            </div>
+        </div>
+        <div class="tickets-grid">
+            <div class="tickets-wrapper">
+                <div class="tickets-head">
+                    <div>
+                        <img class="tickets-image-ebv" src="./assets/ebv.id.png" alt="ebv.id">
+                    </div>
+                    <div class="tickets-head-desc">
+                        <h1>ebv.id</h1>
+                        <p>Whatever street No.12, South Purwokerto</p>
+                    </div>
+                </div>
+                <div class="tickets-showtimes-grid">
+                    <div class="tickets-showtimes-grid-item">08:30am</div>
+                    <div class="tickets-showtimes-grid-item">10:30pm</div>
+                    <div class="tickets-showtimes-grid-item">12:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">02:00pm</div>
+                    <div class="tickets-showtimes-grid-item">04:30pm</div>
+                    <div class="tickets-showtimes-grid-item">07:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">08:30pm</div>
+                </div>
+                <div class="tickets-price">
+                    <span class="price">Price</span>
+                    <span>$10.00/seat</span>
+                </div>
+                <div class="btn-book-now">
+                    <div><a href="order.html"><button>Book Now</button></a></div>
+                    
+                </div>
+            </div>
+            <div class="tickets-wrapper">
+                <div class="tickets-head">
+                    <div>
+                        <img class="tickets-image-cineone21" src="./assets/cineone21.png" alt="cineone21">
+                    </div>
+                    <div class="tickets-head-desc">
+                        <h1>CineOne21</h1>
+                        <p>Downcare street  No. 21, East Purwokerto</p>
+                    </div>
+                </div>
+                <div class="tickets-showtimes-grid">
+                    <div class="tickets-showtimes-grid-item">08:30am</div>
+                    <div class="tickets-showtimes-grid-item">10:30pm</div>
+                    <div class="tickets-showtimes-grid-item">12:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">02:00pm</div>
+                    <div class="tickets-showtimes-grid-item">04:30pm</div>
+                    <div class="tickets-showtimes-grid-item">07:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">08:30pm</div>
+                </div>
+                <div class="tickets-price">
+                    <span class="price">Price</span>
+                    <span>$10.00/seat</span>
+                </div>
+                <div class="btn-book-now">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="tickets-wrapper">
+                <div class="tickets-head">
+                    <div>
+                        <img class="tickets-image-hiflix" src="./assets/hiflix.png" alt="hiflix.id">
+                    </div>
+                    <div class="tickets-head-desc">
+                        <h1>hiflix</h1>
+                        <p>Colonel street No. 2, East Purwokerto</p>
+                    </div>
+                </div>
+                <div class="tickets-showtimes-grid">
+                    <div class="tickets-showtimes-grid-item">08:30am</div>
+                    <div class="tickets-showtimes-grid-item">10:30pm</div>
+                    <div class="tickets-showtimes-grid-item">12:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">02:00pm</div>
+                    <div class="tickets-showtimes-grid-item">04:30pm</div>
+                    <div class="tickets-showtimes-grid-item">07:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">08:30pm</div>
+                </div>
+                <div class="tickets-price">
+                    <span class="price">Price</span>
+                    <span>$10.00/seat</span>
+                </div>
+                <div class="btn-book-now">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="tickets-wrapper">
+                <div class="tickets-head">
+                    <div>
+                        <img class="tickets-image-hiflix" src="./assets/hiflix.png" alt="hiflix.id">
+                    </div>
+                    <div class="tickets-head-desc">
+                        <h1>hiflix</h1>
+                        <p>Colonel street No. 2, East Purwokerto</p>
+                    </div>
+                </div>
+                <div class="tickets-showtimes-grid">
+                    <div class="tickets-showtimes-grid-item">08:30am</div>
+                    <div class="tickets-showtimes-grid-item">10:30pm</div>
+                    <div class="tickets-showtimes-grid-item">12:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">02:00pm</div>
+                    <div class="tickets-showtimes-grid-item">04:30pm</div>
+                    <div class="tickets-showtimes-grid-item">07:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">08:30pm</div>
+                </div>
+                <div class="tickets-price">
+                    <span class="price">Price</span>
+                    <span>$10.00/seat</span>
+                </div>
+                <div class="btn-book-now">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="tickets-wrapper">
+                <div class="tickets-head">
+                    <div>
+                        <img class="tickets-image-hiflix" src="./assets/hiflix.png" alt="hiflix.id">
+                    </div>
+                    <div class="tickets-head-desc">
+                        <h1>hiflix</h1>
+                        <p>Colonel street No. 2, East Purwokerto</p>
+                    </div>
+                </div>
+                <div class="tickets-showtimes-grid">
+                    <div class="tickets-showtimes-grid-item">08:30am</div>
+                    <div class="tickets-showtimes-grid-item">10:30pm</div>
+                    <div class="tickets-showtimes-grid-item">12:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">02:00pm</div>
+                    <div class="tickets-showtimes-grid-item">04:30pm</div>
+                    <div class="tickets-showtimes-grid-item">07:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">08:30pm</div>
+                </div>
+                <div class="tickets-price">
+                    <span class="price">Price</span>
+                    <span>$10.00/seat</span>
+                </div>
+                <div class="btn-book-now">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="tickets-wrapper">
+                <div class="tickets-head">
+                    <div>
+                        <img class="tickets-image-hiflix" src="./assets/hiflix.png" alt="hiflix.id">
+                    </div>
+                    <div class="tickets-head-desc">
+                        <h1>hiflix</h1>
+                        <p>Colonel street No. 2, East Purwokerto</p>
+                    </div>
+                </div>
+                <div class="tickets-showtimes-grid">
+                    <div class="tickets-showtimes-grid-item">08:30am</div>
+                    <div class="tickets-showtimes-grid-item">10:30pm</div>
+                    <div class="tickets-showtimes-grid-item">12:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">02:00pm</div>
+                    <div class="tickets-showtimes-grid-item">04:30pm</div>
+                    <div class="tickets-showtimes-grid-item">07:00pm</div>  
+                    <div class="tickets-showtimes-grid-item">08:30pm</div>
+                </div>
+                <div class="tickets-price">
+                    <span class="price">Price</span>
+                    <span>$10.00/seat</span>
+                </div>
+                <div class="btn-book-now">
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="line-flex">
+            <div class="line"></div>
+            <div class="view-more">
+                <a href="view-all.html">view more</a>
+            </div>
+            <div class="line"></div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="Tickitz">
+                <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="footer-explore">
+                <span>Explore</span>
+                <ul>
+                    <li>Home</li>
+                    <li>List Movie</li>
+                </ul>
+            </div>
+            <div class="footer-sponsor">
+                <span>Our Sponsor</span>
+                <ul>
+                    <li><img src="./assets/ebv.id.png" alt="ebv.id"></li>
+                    <li><img src="./assets/cineone21.png" alt="cineone21"></li>
+                    <li><img src="./assets/hiflix.png" alt="hiflix"></li>
+                </ul>
+            </div>
+            <div class="footer-follow">
+                <span>Follow Us</span>
+                <ul>
+                    <li>
+                        <div><i data-feather="facebook"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="instagram"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="twitter"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="youtube"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2020 Tickitz. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>

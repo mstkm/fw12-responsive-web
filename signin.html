@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <section class="tickitz-page">
+        <div class="tickitz-page-left">
+            <div class="tickitz-banner">
+                <div class="tickitz-banner-logo">
+                    <img src="./assets/tickitz1.png" alt="Tickitz">
+                </div>
+                <div class="tickitz-banner-text">wait, watch, wow!</div>
+            </div>
+        </div>
+        
+        <div class="tickitz-page-right">
+            <div class="tickitz-header">
+                <div class="tickitz-header-logo">
+                    <img src="./assets/tickitz-main.png" alt="Tickitz">
+                </div>
+                <div class="tickitz-header-text">
+                    <h1>Sign In</h1>
+                    <p>Sign in with your data that you entered during your registration</p>
+                </div>
+            </div>
+            <div class="tickitz-form">
+                <!-- <form action=""> -->
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Write your email"><br>
+                    <label for="password">Password</label><br>
+                    <div class="tickitz-form-eye-wrapper">
+                        <input type="password" name="password" id="password" placeholder="Write your password">
+                        <div class="tickitz-form-eye-icon">
+                            <i data-feather="eye"></i>
+                        </div>
+                    </div>
+                    <div class="tickitz-btn">
+                        <a href="home-myaccount.html"><button type="submit">Sign In</button></a>
+                    </div>
+                <!-- </form> -->
+            </div>
+            <div class="tickit-question">
+                <span>Forgot your password? </span>
+                <span><a href="forgot-password.html">Reset now</a></span>
+            </div>
+            <div class="tickit-question">
+                <span>Don't have an account? </span>
+                <span><a href="signup.html">Sign Up</a></span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

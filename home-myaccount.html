@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Account</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        .now-showing-image .card-image:hover {
+            background-color: #FFFFFF;
+            border-radius: 8px 8px 0 0;
+            border-color: #FFFFFF;
+        }
+
+        .now-showing-image .card-image:hover > .title {
+            display: inline-block;
+            border-bottom: 1px solid #DEDEDE;
+            box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);
+        }
+    </style>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar-logo">
+                <img src="./assets/logo.png" alt="Tikitz">
+            </div>
+            <div class="nav-bar-list">
+                <a href="home-myaccount.html">Home</a>
+                <a href="view-all.html">List Item</a>
+            </div>
+            <div class="nav-search">
+                <div>
+                    <i data-feather="search"></i>
+                </div>
+                <div class="drop-search">
+                    <div class="drop-search-icon"><i data-feather="search"></i></div>
+                    <input type="text" placeholder="Search Movie Name ...">
+                </div>
+            </div>
+            <div class="nav-bar-photo-profile">
+                <div>
+                    <img src="./assets/photo-profile.png" alt="Photo Profile">
+                </div>
+                <div class="drop-profile">
+                    <div>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                    <div>
+                        <a href="home.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-dropdown">
+                <i data-feather="menu"></i>
+                <div class="content-menu-dropdown">
+                    <div class="dropdown-search">
+                        <div class="dropdown-search-box">
+                            <div class="dropdown-search-icon"><i data-feather="search"></i></div>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="menu-item"><a href="home-myaccount.html">Home</a></div>
+                    <div class="menu-item"><a href="view-all.html">List Movie</a></div>
+                    <div class="menu-item"><a href="profile.html">Profile</a></div>
+                    <div class="menu-item"><a href="signin.html">Logout</a></div>
+                    <div><span>© 2020 Tickitz. All Rights Reserved.</span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="jumbotron">
+        <div class="jumbotron-text">
+            <p>Nearest Cinema, Newest Movie,</p>
+            <h1>Find out now!</h1>
+        </div>
+        <div class="jumbotron-image">
+            <img src="./assets/image2.png" alt="Spiderman Lion Woman">
+        </div>
+    </section>
+
+    <section class="now-showing">
+        <div class="now-showing-nav">
+            <div class="line">
+                <h2>Now Showing</h2>
+            </div>
+            <div>
+                <a href="view-all.html">view all</a>
+            </div>
+        </div>
+        <div class="now-showing-image">
+            <div class="card-image">
+                <div class="banner-movie">
+                    <img src="./assets/spiderman.png" alt="Spiderman">
+                </div>
+                <div class="title">
+                    <h1>Spiderman</h1>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <div class="btn-details">
+                        <div><a href="movie-details.html"><button>Details</button></a></div>
+                    </div>                        
+                </div>
+            </div>
+            <div class="card-image">
+                <div class="banner-movie">
+                    <img src="./assets/lion king.png" alt="Lion King">
+                </div>
+                <div class="title">
+                    <h1>Lion King</h1>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <div class="btn-details">
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-image">
+                <div class="banner-movie">
+                    <img src="./assets/john wick 3.png" alt="John Wick 3">
+                </div>
+                <div class="title">
+                    <h1>John Wick 3</h1>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <div class="btn-details">
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-image">
+                <div class="banner-movie">
+                    <img src="./assets/spiderman.png" alt="Spiderman">
+                </div>
+                <div class="title">
+                    <h1>Spiderman</h1>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <div class="btn-details">
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-image">
+                <div class="banner-movie">
+                    <img src="./assets/lion king.png" alt="Lion King">
+                </div>
+                <div class="title">
+                    <h1>Lion King</h1>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <div class="btn-details">
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="upcoming-movies">
+        <div class="movies-nav">
+            <div class="mov-flex">
+                <h1>Upcoming Movies</h1>
+            </div>
+            <div>
+                <a href="view-all.html">view all</a>
+            </div>
+        </div>
+        <div class="movies-month">
+            <div class="btn-month">
+                <button>September</button>
+                <button>October</button>
+                <button>November</button>
+                <button>Desember</button>
+                <button>January</button>
+                <button>February</button>
+                <button>March</button>
+                <button>April</button>
+                <button>May</button>
+                <button>June</button>
+                <button>July</button>
+                <button>Agustus</button>
+            </div>
+        </div>
+        <div class="upcoming-movies-list">
+            <div class="card-image-title">
+                <img src="./assets/black widow.png" alt="Black Widow">
+                <div class="title">
+                    <h1>Black Widow</h1>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <div class="btn-details">
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-image-title">
+                <img src="./assets/witches.png" alt="The Witches">
+                <div class="title">
+                    <h1>The Witches</h1>
+                    <p>Adventure, Comedy, Family</p>
+                    <div class="btn-details">
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-image-title">
+                <img src="./assets/tenet.png" alt="Tenet">
+                <div class="title">
+                    <h1>Tenet</h1>
+                    <p>Action, Sci-Fi</p>
+                    <div class="btn-details">
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-image-title">
+                <img src="./assets/black widow.png" alt="Black Widow">
+                <div class="title">
+                    <h1>Black Widow</h1>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <div class="btn-details">
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-image-title">
+                <img src="./assets/witches.png" alt="The Witches">
+                <div class="title">
+                    <h1>The Witches</h1>
+                    <p>Adventure, Comedy, Family</p>
+                    <div class="btn-details">
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-register">
+        <div class="join-text1">
+            <p>Be the vanguard of the</p>
+            <h1>Moviegoers</h1>
+        </div>
+        <div class="join-form">
+            <input type="email" placeholder="Type your email">
+            <button>Join Now</button>
+        </div>
+        <div class="join-text2">
+            <p>By joining you as a Tickitz member, we will always send you the latest updates via email.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="Tickitz">
+                <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="footer-explore">
+                <span>Explore</span>
+                <ul>
+                    <li>Home</li>
+                    <li>List Movie</li>
+                </ul>
+            </div>
+            <div class="footer-sponsor">
+                <span>Our Sponsor</span>
+                <ul>
+                    <li><img src="./assets/ebv.id.png" alt="ebv.id"></li>
+                    <li><img src="./assets/cineone21.png" alt="cineone21"></li>
+                    <li><img src="./assets/hiflix.png" alt="hiflix"></li>
+                </ul>
+            </div>
+            <div class="footer-follow">
+                <span>Follow Us</span>
+                <ul>
+                    <li>
+                        <div><i data-feather="facebook"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="instagram"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="twitter"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="youtube"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2020 Tickitz. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>

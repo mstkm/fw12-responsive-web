@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Schedule</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <style>
+        section {
+            font-family: 'Mulish';
+        }
+
+        .pages {
+            cursor: pointer;
+        }
+
+        .pages:hover {
+            color: #FFFFFF;
+            background: #5F2EEA;
+            box-shadow: 0px 8px 16px rgba(95, 46, 234, 0.24);
+            border-radius: 8px;
+        }
+        .menu-dropdown {
+            z-index: 1;
+        }
+        
+    </style>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar-logo">
+                <img src="./assets/logo.png" alt="Tikitz">
+            </div>
+            <div class="nav-bar-list manage">
+                <a href="dahsboard.html">Dashboard</a>
+                <a href="manage-movie-page.html">Manage Movie</a>
+                <a href="manage-schedule.html">Manage Schedule</a>
+            </div>
+            <div class="nav-search">
+                <div>
+                    <i data-feather="search"></i>
+                </div>
+                <div class="drop-search">
+                    <div class="drop-search-icon" style="z-index: 1"><i data-feather="search"></i></div>
+                    <input class="text-end" type="text" placeholder="Search Movie Name ...">
+                </div>
+            </div>
+            <div class="nav-bar-photo-profile">
+                <div>
+                    <img src="./assets/photo-profile.png" alt="Photo Profile">
+                </div>
+                <div class="drop-profile">
+                    <div>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                    <div>
+                        <a href="home.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-dropdown">
+                <i data-feather="menu"></i>
+                <div class="content-menu-dropdown">
+                    <div class="dropdown-search">
+                        <div class="dropdown-search-box">
+                            <div class="dropdown-search-icon"><i data-feather="search"></i></div>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="menu-item"><a href="dahsboard.html">Dashboard</a></div>
+                    <div class="menu-item"><a href="manage-movie-page.html">Manage Movie</a></div>
+                    <div class="menu-item"><a href="manage-schedule.html">Manage Schedule</a></div>
+                    <div class="menu-item"><a href="profile.html">Profile</a></div>
+                    <div class="menu-item"><a href="signin.html">Logout</a></div>
+                    <div><span>© 2020 Tickitz. All Rights Reserved.</span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-light pt-5">
+        <div class="container">
+            <h2 class="fs-3 fw-bold mb-3">Form Schedule</h2>
+            <div class="bg-white rounded p-4">
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-3">
+                        <div class="card p-3"><img src="./assets/spiderman.png" alt="Spiderman"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-4">
+                            <span class="d-block text-muted mb-2">Movie</span>
+                            <select class="form-select text-muted pt-3 pb-3" name="" id="" >
+                                <option value="">Select Movie</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <span class="d-block text-muted mb-2">Price</span>
+                            <div class="card text-muted pt-3 pb-3 ps-3">
+                                <span>10</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="d-block text-muted mb-2">Premiere</span>
+                            <div class="d-inline-block me-1"><img src="./assets/ebv-vector.png" alt="ebv.id"></div>
+                            <div class="d-inline-block me-1 img-fluid img-thumbnail"><img src="./assets/hiflix-vector.png" alt="hiflix"></div>
+                            <div class="d-inline-block me-1"><img src="./assets/cineone21-vector.png" alt="cineone21"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-4">
+                            <span class="d-block text-muted mb-2">Location</span>
+                            <select class="form-select text-muted pt-3 pb-3" name="" id="">
+                                <option value="">Select Location</option>
+                            </select>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <span class="d-block text-muted mb-2">Date Start</span>
+                                <div>
+                                    <span class="card text-muted pt-3 pb-3 ps-3">07/05/2020</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="d-block text-muted mb-2">Date End</span>
+                                <div>
+                                    <span class="card text-muted pt-3 pb-3 ps-3">07/07/2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="d-block text-muted mb-2">Time</span>
+                            <div class="row">
+                                <div class="col-3 mb-3 text-center text-primary fw-bold"><span class="card border-primary">+</span></div>
+                                <div class="col-3 text-muted fw-semibold"><span>08:30am</span></div>
+                                <div class="col-3 text-muted fw-semibold"><span>10:30pm</span></div>
+                                <div class="col-3 text-muted fw-semibold"><span>12:00pm</span></div>
+                                <div class="col-3 text-muted fw-semibold"><span>04:30pm</span></div>
+                                <div class="col-3 text-muted fw-semibold"><span>07:00pm</span></div>
+                                <div class="col-3 text-muted fw-semibold"><span>08:30pm</span></div>
+                                <div class="col-3 text-muted fw-semibold"><span>08:30pm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-end mt-4 mb-4 me-5">
+                    <button class="btn btn-outline-primary fw-bold pt-2 pb-2 ps-5 pe-5 me-3">Reset</button>
+                    <button class="btn btn-outline-primary fw-bold pt-2 pb-2 ps-5 pe-5 ">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row align-items-center mb-3">
+               <div class="col-6">
+                    <h2 class="fs-3 fw-bold mt-2">Data Schedule</h2>
+                </div> 
+               <div class="col-2">
+                    <select class="flex-grow-1 form-select text-muted" name="" id="">
+                        <option value="">Sort</option>
+                    </select>
+               </div> 
+               <div class="col-2">
+                    <select class="form-select text-muted" name="" id="">
+                        <option value="">Location</option>
+                    </select>
+               </div> 
+                <div class="col-2">
+                    <select class="form-select text-muted" name="" id="">
+                        <option value="">Movie</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row bg-white rounded pt-4 pb-4">
+                <div class="col-md-4 d-inline-block">
+                    <div class="card p-3 m-2 text-center">
+                        <div class="row align-items-center pb-4 border-bottom">
+                            <div class="col">
+                                <img src="./assets/ebv-vector.png" alt="ebv">
+                            </div>
+                            <div class="col">
+                                <span class="d-block fs-5 text-start">ebv.id</span>
+                                <span class="d-block text-start text-muted" style="font-size: 0.7rem;">Whatever street No.12, South Purwokerto</span>
+                            </div>
+                        </div>
+                        <div class="row text-start mt-3 mb-4">
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>08:30am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>10:30pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>12:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>02:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>04:30pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>07:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>08:30pm</span></div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-6 text-start text-muted"><span>Price</span></div>
+                            <div class="col-6 text-end fw-bold"><span>$10.00/seat</span></div>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <div class="flex-grow-1"><button class="btn btn-outline-primary ps-5 pe-5">Update</button></div>
+                            <div class="flex-grow-1"><button class="btn btn-outline-danger ps-5 pe-5">Delete</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-inline-block">
+                    <div class="card p-3 m-2 text-center">
+                        <div class="row align-items-center pb-4 border-bottom">
+                            <div class="col">
+                                <img src="./assets/cineone21-vector.png" alt="cineone21-vector">
+                            </div>
+                            <div class="col">
+                                <span class="d-block fs-5 text-start">CineOne21</span>
+                                <span class="d-block text-start text-muted" style="font-size: 0.7rem;">Downcare street  No. 21, East Purwokerto</span>
+                            </div>
+                        </div>
+                        <div class="row text-start mt-3 mb-4">
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>08:30am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>10:00am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>12:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-primary" style="font-size: 0.85rem;"><span>02:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>04:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>06:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>08:00pm</span></div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-6 text-start text-muted"><span>Price</span></div>
+                            <div class="col-6 text-end fw-bold"><span>$10.00/seat</span></div>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <div class="flex-grow-1"><button class="btn btn-outline-primary ps-5 pe-5">Update</button></div>
+                            <div class="flex-grow-1"><button class="btn btn-outline-danger ps-5 pe-5">Delete</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-inline-block">
+                    <div class="card p-3 m-2 text-center">
+                        <div class="row align-items-center pb-4 border-bottom">
+                            <div class="col">
+                                <img src="./assets/hiflix-vector.png" alt="hiflix">
+                            </div>
+                            <div class="col">
+                                <span class="d-block fs-5 text-start">hiflix Cinema</span>
+                                <span class="d-block text-start text-muted" style="font-size: 0.7rem;">Colonel street No. 2, East Purwokerto</span>
+                            </div>
+                        </div>
+                        <div class="row text-start mt-3 mb-4">
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>08:30am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>10:00am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>12:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>02:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>04:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>06:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>08:00pm</span></div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-6 text-start text-muted"><span>Price</span></div>
+                            <div class="col-6 text-end fw-bold"><span>$10.00/seat</span></div>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <div class="flex-grow-1"><button class="btn btn-outline-primary ps-5 pe-5">Update</button></div>
+                            <div class="flex-grow-1"><button class="btn btn-outline-danger ps-5 pe-5">Delete</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-inline-block">
+                    <div class="card p-3 m-2 text-center">
+                        <div class="row align-items-center pb-4 border-bottom">
+                            <div class="col">
+                                <img src="./assets/ebv-vector.png" alt="ebv">
+                            </div>
+                            <div class="col">
+                                <span class="d-block fs-5 text-start">ebv.id</span>
+                                <span class="d-block text-start text-muted" style="font-size: 0.7rem;">Whatever street No.12, South Purwokerto</span>
+                            </div>
+                        </div>
+                        <div class="row text-start mt-3 mb-4">
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>08:30am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>10:30pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>12:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>02:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>04:30pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>07:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>08:30pm</span></div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-6 text-start text-muted"><span>Price</span></div>
+                            <div class="col-6 text-end fw-bold"><span>$10.00/seat</span></div>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <div class="flex-grow-1"><button class="btn btn-outline-primary ps-5 pe-5">Update</button></div>
+                            <div class="flex-grow-1"><button class="btn btn-outline-danger ps-5 pe-5">Delete</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-inline-block">
+                    <div class="card p-3 m-2 text-center">
+                        <div class="row align-items-center pb-4 border-bottom">
+                            <div class="col">
+                                <img src="./assets/cineone21-vector.png" alt="cineone21-vector">
+                            </div>
+                            <div class="col">
+                                <span class="d-block fs-5 text-start">CineOne21</span>
+                                <span class="d-block text-start text-muted" style="font-size: 0.7rem;">Downcare street  No. 21, East Purwokerto</span>
+                            </div>
+                        </div>
+                        <div class="row text-start mt-3 mb-4">
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>08:30am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>10:00am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>12:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-primary" style="font-size: 0.85rem;"><span>02:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>04:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>06:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>08:00pm</span></div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-6 text-start text-muted"><span>Price</span></div>
+                            <div class="col-6 text-end fw-bold"><span>$10.00/seat</span></div>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <div class="flex-grow-1"><button class="btn btn-outline-primary ps-5 pe-5">Update</button></div>
+                            <div class="flex-grow-1"><button class="btn btn-outline-danger ps-5 pe-5">Delete</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-inline-block">
+                    <div class="card p-3 m-2 text-center">
+                        <div class="row align-items-center pb-4 border-bottom">
+                            <div class="col">
+                                <img src="./assets/hiflix-vector.png" alt="hiflix">
+                            </div>
+                            <div class="col">
+                                <span class="d-block fs-5 text-start">hiflix Cinema</span>
+                                <span class="d-block text-start text-muted" style="font-size: 0.7rem;">Colonel street No. 2, East Purwokerto</span>
+                            </div>
+                        </div>
+                        <div class="row text-start mt-3 mb-4">
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>08:30am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>10:00am</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>12:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>02:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>04:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-black-50" style="font-size: 0.85rem;"><span>06:00pm</span></div>
+                            <div class="col-3 mt-3 fw-bold text-muted" style="font-size: 0.85rem;"><span>08:00pm</span></div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-6 text-start text-muted"><span>Price</span></div>
+                            <div class="col-6 text-end fw-bold"><span>$10.00/seat</span></div>
+                        </div>
+                        <div class="d-flex mt-3 mb-3">
+                            <div class="flex-grow-1"><button class="btn btn-outline-primary ps-5 pe-5">Update</button></div>
+                            <div class="flex-grow-1"><button class="btn btn-outline-danger ps-5 pe-5">Delete</button></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+            <div class="d-flex justify-content-center">
+                <div class="card pt-2 pb-2 ps-3 pe-3 mt-4 mb-4 me-3 pages">1</div>
+                <div class="card pt-2 pb-2 ps-3 pe-3 mt-4 mb-4 me-3 pages">2</div>
+                <div class="card pt-2 pb-2 ps-3 pe-3 mt-4 mb-4 me-3 pages">3</div>
+                <div class="card pt-2 pb-2 ps-3 pe-3 mt-4 mb-4 me-3 pages">4</div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="Tickitz">
+                <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="footer-explore">
+                <span>Explore</span>
+                <ul>
+                    <li>Home</li>
+                    <li>List Movie</li>
+                </ul>
+            </div>
+            <div class="footer-sponsor">
+                <span>Our Sponsor</span>
+                <ul>
+                    <li><img src="./assets/ebv.id.png" alt="ebv.id"></li>
+                    <li><img src="./assets/cineone21.png" alt="cineone21"></li>
+                    <li><img src="./assets/hiflix.png" alt="hiflix"></li>
+                </ul>
+            </div>
+            <div class="footer-follow">
+                <span>Follow Us</span>
+                <ul>
+                    <li>
+                        <div><i data-feather="facebook"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="instagram"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="twitter"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="youtube"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2020 Tickitz. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

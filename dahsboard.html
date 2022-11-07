@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar-logo">
+                <img src="./assets/logo.png" alt="Tikitz">
+            </div>
+            <div class="nav-bar-list manage">
+                <a href="dahsboard.html">Dashboard</a>
+                <a href="manage-movie-page.html">Manage Movie</a>
+                <a href="manage-schedule.html">Manage Schedule</a>
+            </div>
+            <div class="nav-search">
+                <div>
+                    <i data-feather="search"></i>
+                </div>
+                <div class="drop-search">
+                    <div class="drop-search-icon"><i data-feather="search"></i></div>
+                    <input type="text" placeholder="Search Movie Name ...">
+                </div>
+            </div>
+            <div class="nav-bar-photo-profile">
+                <div>
+                    <img src="./assets/photo-profile.png" alt="Photo Profile">
+                </div>
+                <div class="drop-profile">
+                    <div>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                    <div>
+                        <a href="home.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-dropdown">
+                <i data-feather="menu"></i>
+                <div class="content-menu-dropdown">
+                    <div class="dropdown-search">
+                        <div class="dropdown-search-box">
+                            <div class="dropdown-search-icon"><i data-feather="search"></i></div>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="menu-item"><a href="dahsboard.html">Dashboard</a></div>
+                    <div class="menu-item"><a href="manage-movie-page.html">Manage Movie</a></div>
+                    <div class="menu-item"><a href="manage-schedule-bootstrap.html">Manage Schedule</a></div>
+                    <div class="menu-item"><a href="profile.html">Profile</a></div>
+                    <div class="menu-item"><a href="signin.html">Logout</a></div>
+                    <div><span>© 2020 Tickitz. All Rights Reserved.</span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="dashboard-page">
+        <div class="dashboard">
+            <h1>Dashboard</h1>
+            <div class="dashboard-box">
+                <div>
+                    <img src="./assets/dashboard.png" alt="dashboard">
+                </div>
+            </div>
+        </div>
+        <div class="filtered">
+            <h1>Filtered</h1>
+            <div class="filtered-box">
+                <form action="">
+                    <div class="select-movie">
+                        <select name="" id="">
+                            <option value="">Select Movie</option>
+                        </select>
+                    </div>
+                    <div class="select-premiere">
+                        <select name="" id="">
+                            <option value="">Select Premiere</option>
+                        </select>
+                    </div>
+                    <div class="select-location">
+                        <select name="" id="">
+                            <option value="">Select Location</option>
+                        </select>
+                    </div>
+                    <div class="btn-filter-reset">
+                        <button class="active">Filter</button>
+                        <button>Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="Tickitz">
+                <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="footer-explore">
+                <span>Explore</span>
+                <ul>
+                    <li>Home</li>
+                    <li>List Movie</li>
+                </ul>
+            </div>
+            <div class="footer-sponsor">
+                <span>Our Sponsor</span>
+                <ul>
+                    <li><img src="./assets/ebv.id.png" alt="ebv.id"></li>
+                    <li><img src="./assets/cineone21.png" alt="cineone21"></li>
+                    <li><img src="./assets/hiflix.png" alt="hiflix"></li>
+                </ul>
+            </div>
+            <div class="footer-follow">
+                <span>Follow Us</span>
+                <ul>
+                    <li>
+                        <div><i data-feather="facebook"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="instagram"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="twitter"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="youtube"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2020 Tickitz. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>

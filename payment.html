@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar-logo">
+                <img src="./assets/logo.png" alt="Tikitz">
+            </div>
+            <div class="nav-bar-list">
+                <a href="home-myaccount.html">Home</a>
+                <a href="view-all.html">List Item</a>
+            </div>
+            <div class="nav-search">
+                <div>
+                    <i data-feather="search"></i>
+                </div>
+                <div class="drop-search">
+                    <div class="drop-search-icon"><i data-feather="search"></i></div>
+                    <input type="text" placeholder="Search Movie Name ...">
+                </div>
+            </div>
+            <div class="nav-bar-photo-profile">
+                <div>
+                    <img src="./assets/photo-profile.png" alt="Photo Profile">
+                </div>
+                <div class="drop-profile">
+                    <div>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                    <div>
+                        <a href="home.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-dropdown">
+                <i data-feather="menu"></i>
+                <div class="content-menu-dropdown">
+                    <div class="dropdown-search">
+                        <div class="dropdown-search-box">
+                            <div class="dropdown-search-icon"><i data-feather="search"></i></div>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="menu-item"><a href="home-myaccount.html">Home</a></div>
+                    <div class="menu-item"><a href="view-all.html">List Movie</a></div>
+                    <div class="menu-item"><a href="profile.html">Profile</a></div>
+                    <div class="menu-item"><a href="signin.html">Logout</a></div>
+                    <div><span>© 2020 Tickitz. All Rights Reserved.</span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="payment-page">
+        <main class="payment-page-left">
+            <div class="payment-info">
+                <h3>Payment Info</h3>
+                <div class="payment-info-box">
+                    <div class="payment-info-detail">
+                        <div class="info-grey">Date & time</div>
+                        <div class="info-black">Tuesday, 07 July 2020 at 02:00 </div>
+                    </div>
+                    <div class="payment-info-detail">
+                        <div class="info-grey">Movie title</div>
+                        <div class="info-black">Spider-Man: Homecoming</div>
+                    </div>
+                    <div class="payment-info-detail">
+                        <div class="info-grey">Cinema name</div>
+                        <div class="info-black">CineOne21 Cinema</div>
+                    </div>
+                    <div class="payment-info-detail">
+                        <div class="info-grey">Number of tickets</div>
+                        <div class="info-black">3 pieces</div>
+                    </div>
+                    <div class="payment-info-total">
+                        <div class="info-total">Total payment</div>
+                        <div class="info-price">$30,00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-method">
+                <h3>Choose a Payment Method</h3>
+                <div class="payment-method-box">
+                    <div class="payment-image-wrap">
+                        <div class="payment-image-item">
+                            <img src="./assets/google-pay.png" alt="google-pay">
+                        </div>
+                        <div class="payment-image-item">
+                            <img src="./assets/visa.png" alt="visa">
+                        </div>
+                        <div class="payment-image-item">
+                            <img src="./assets/gopay.png" alt="gopay">
+                        </div>
+                        <div class="payment-image-item">
+                            <img src="./assets/paypal.png" alt="paypal">
+                        </div>
+                        <div class="payment-image-item">
+                            <img src="./assets/dana.png" alt="dana">
+                        </div>
+                        <div class="payment-image-item">
+                            <img src="./assets/bca.png" alt="bca">
+                        </div>
+                        <div class="payment-image-item">
+                            <img src="./assets/bri.png" alt="bri">
+                        </div>
+                        <div class="payment-image-item">
+                            <img src="./assets/ovo.png" alt="ovo">
+                        </div>
+                    </div>
+                    <div class="or">
+                        <div class="or-line"></div>
+                        <div class="or-text">or</div>
+                        <div class="or-line"></div>
+                    </div>
+                    <div class="cash">
+                        <span class="cash-text1">Pay via cash. </span>
+                        <span class="cash-text2">See how it work</span>
+                    </div>
+                </div>
+                <div class="btn-payment">
+                    <div class="btn-previous">
+                        <div><a href="order.html"><button>Previous step</button></a></div>
+                    </div>
+                    <div class="btn-pay">
+                        <div><a href="order-history.html"><button>Pay your order</button></a></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="payment-page-right">
+            <div class="personal-info">
+                <h3>Personal Info</h3>
+                <div class="personal-info-box">
+                    <form action="">
+                        <div class="personal-info-form">
+                            <label for="fullName">Full Name</label><br>
+                            <input type="text" name="fullName" id="fullName" placeholder="Jonas El Rodriguez">
+                        </div>
+                        <div class="personal-info-form">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email" placeholder="jonasrodri123@gmail.com">
+                        </div>
+                        <div class="personal-info-form">
+                            <label for="phoneNumber">Phone Number</label><br>
+                            <div class="form-phone-code">
+                                <input class="phone-code" type="text" name="phoneNumber" id="phoneNumber" placeholder="+62">
+                                <input class="phone-number" type="text" name="phoneNumber" id="phoneNumber" placeholder="81445687121">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="personal-info-alert">
+                        <span><img src="./assets/alert-icon.png" alt="alert-icon"></span>
+                        <span class="text-alert">Fill your data correctly.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-payment-mobile">
+                <div class="btn-pay">
+                    <div><a href="order-history.html"><button>Pay your order</button></a></div>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="Tickitz">
+                <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="footer-explore">
+                <span>Explore</span>
+                <ul>
+                    <li>Home</li>
+                    <li>List Movie</li>
+                </ul>
+            </div>
+            <div class="footer-sponsor">
+                <span>Our Sponsor</span>
+                <ul>
+                    <li><img src="./assets/ebv.id.png" alt="ebv.id"></li>
+                    <li><img src="./assets/cineone21.png" alt="cineone21"></li>
+                    <li><img src="./assets/hiflix.png" alt="hiflix"></li>
+                </ul>
+            </div>
+            <div class="footer-follow">
+                <span>Follow Us</span>
+                <ul>
+                    <li>
+                        <div><i data-feather="facebook"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="instagram"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="twitter"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="youtube"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2020 Tickitz. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>

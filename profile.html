@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar-logo">
+                <img src="./assets/logo.png" alt="Tikitz">
+            </div>
+            <div class="nav-bar-list">
+                <a href="home-myaccount.html">Home</a>
+                <a href="view-all.html">List Item</a>
+            </div>
+            <div class="nav-search">
+                <div>
+                    <i data-feather="search"></i>
+                </div>
+                <div class="drop-search">
+                    <div class="drop-search-icon"><i data-feather="search"></i></div>
+                    <input type="text" placeholder="Search Movie Name ...">
+                </div>
+            </div>
+            <div class="nav-bar-photo-profile">
+                <div>
+                    <img src="./assets/photo-profile.png" alt="Photo Profile">
+                </div>
+                <div class="drop-profile">
+                    <div>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                    <div>
+                        <a href="home.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-dropdown">
+                <i data-feather="menu"></i>
+                <div class="content-menu-dropdown">
+                    <div class="dropdown-search">
+                        <div class="dropdown-search-box">
+                            <div class="dropdown-search-icon"><i data-feather="search"></i></div>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="menu-item"><a href="home-myaccount.html">Home</a></div>
+                    <div class="menu-item"><a href="view-all.html">List Movie</a></div>
+                    <div class="menu-item"><a href="profile.html">Profile</a></div>
+                    <div class="menu-item"><a href="signin.html">Logout</a></div>
+                    <div><span>© 2020 Tickitz. All Rights Reserved.</span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="profile-page">
+        <aside class="profile-page-left">
+            <div class="profile-info">
+                <div class="profile-info-title">INFO</div>
+                <div class="profile-info-photo">
+                    <img src="./assets/photo.png" alt="My Photo Profile">
+                </div>
+                <div class="profile-info-name">Jonas El Rodriguez</div>
+                <div class="profile-info-rank">Moviegoers</div>
+                <div class="profile-btn-logout">
+                    <div><a href="home.html"><button>Logout</button></a></div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="profile-page-right">
+            <div class="settings-history">
+                <div class="settings active"><a href="profile.html">Account Settings</a></div>
+                <div class="history non-active"><a href="order-history.html">Order History</a></div>
+            </div>
+            <div class="account-detail">
+                <div class="details-title">Detail Information</div>
+                <form action="">
+                    <div class="info-personal-wrap">
+                        <div class="info-item">
+                            <label for="fname">First Name</label><br>
+                            <input type="text" name="fname" id="fname" placeholder="Jonas">
+                        </div>
+                        <div class="info-item">
+                            <label for="lname">Last Name</label><br>
+                            <input type="text" name="lname" id="lname" placeholder="El Rodriguez">
+                        </div>
+                        <div class="info-item">
+                            <label for="email">E-mail</label><br>
+                            <input type="email" name="email" id="email" placeholder="jonasrodrigu123@gmail.com">     
+                        </div>
+                        <div class="info-item">
+                            <label for="phoneNumber">Phone Number</label><br>
+                            <div class="info-phone-number">
+                                <input class="" type="text" name="phoneNumber" id="phoneNumber" placeholder="+62">       
+                                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="81445687121">    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-update-changes">
+                    <button type="submit">Update changes</button>
+                </div>
+                </form>
+                
+            <form action="">
+                <div class="account-privacy">
+                    <div class="account-privacy-title">Account and Privacy</div>
+                    <div class="account-privacy-form-wrapper">
+                        <div class="account-privacy-form">
+                            <label for="new-password">New Password</label><br>
+                            <div class="eye-password">
+                                <input type="password" id="new-password" name="new-password" placeholder="Write your new password"><br>
+                                <div class="eye-feather-icon">
+                                    <i data-feather="eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-privacy-form">
+                            <label for="confirm-password">Confirm password</label><br>
+                            <div class="eye-password">
+                                <input type="password" id="confirm-password" name="confirm-password" placeholder="Write your password"><br>
+                                <div class="eye-feather-icon">
+                                    <i data-feather="eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-update-changes">
+                    <button type="reset">Update changes</button>
+                </div>
+            </form>
+        </main>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="Tickitz">
+                <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="footer-explore">
+                <span>Explore</span>
+                <ul>
+                    <li>Home</li>
+                    <li>List Movie</li>
+                </ul>
+            </div>
+            <div class="footer-sponsor">
+                <span>Our Sponsor</span>
+                <ul>
+                    <li><img src="./assets/ebv.id.png" alt="ebv.id"></li>
+                    <li><img src="./assets/cineone21.png" alt="cineone21"></li>
+                    <li><img src="./assets/hiflix.png" alt="hiflix"></li>
+                </ul>
+            </div>
+            <div class="footer-follow">
+                <span>Follow Us</span>
+                <ul>
+                    <li>
+                        <div><i data-feather="facebook"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="instagram"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="twitter"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="youtube"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2020 Tickitz. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>

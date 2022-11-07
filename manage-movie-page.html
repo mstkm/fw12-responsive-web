@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Movie Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar-logo">
+                <img src="./assets/logo.png" alt="Tikitz">
+            </div>
+            <div class="nav-bar-list manage">
+                <a href="dahsboard.html">Dashboard</a>
+                <a href="manage-movie-page.html">Manage Movie</a>
+                <a href="manage-schedule.html">Manage Schedule</a>
+            </div>
+            <div class="nav-search">
+                <div>
+                    <i data-feather="search"></i>
+                </div>
+                <div class="drop-search">
+                    <div class="drop-search-icon"><i data-feather="search"></i></div>
+                    <input type="text" placeholder="Search Movie Name ...">
+                </div>
+            </div>
+            <div class="nav-bar-photo-profile">
+                <div>
+                    <img src="./assets/photo-profile.png" alt="Photo Profile">
+                </div>
+                <div class="drop-profile">
+                    <div>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                    <div>
+                        <a href="home.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-dropdown">
+                <i data-feather="menu"></i>
+                <div class="content-menu-dropdown">
+                    <div class="dropdown-search">
+                        <div class="dropdown-search-box">
+                            <div class="dropdown-search-icon"><i data-feather="search"></i></div>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="menu-item"><a href="dahsboard.html">Dashboard</a></div>
+                    <div class="menu-item"><a href="manage-movie-page.html">Manage Movie</a></div>
+                    <div class="menu-item"><a href="manage-schedule-bootstrap.html">Manage Schedule</a></div>
+                    <div class="menu-item"><a href="profile.html">Profile</a></div>
+                    <div class="menu-item"><a href="signin.html">Logout</a></div>
+                    <div><span>© 2020 Tickitz. All Rights Reserved.</span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="manage-movie-page">
+        <div class="form-movie">
+            <h1>Form Movie</h1>
+            <div class="form-movie-box">
+                <div class="form-movie-info">
+                    <div class="info-banner">
+                        <img src="./assets/spiderman.png" alt="Spiderman">
+                    </div>
+                    <div class="info-detail1">
+                        <div class="detail-item">
+                            <h3>Movie Name</h3>
+                            <div class="detail-item-box">
+                                <h4>Spider-Man: Homecoming</h4>
+                            </div>
+                        </div>
+                        <div class="detail-item margin-tb">
+                            <h3>Director</h3>
+                            <div class="detail-item-box">
+                                <h4>Jon Watts</h4>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Release date</h3>
+                            <div class="detail-item-box">
+                                <h4>07/05/2020</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-detail2">
+                        <div class="detail-item">
+                            <h3>Category</h3>
+                            <div class="detail-item-box">
+                                <h4>Action, Adventure, Sci-Fi</h4>
+                            </div>
+                        </div>
+                        <div class="detail-item margin-tb">
+                            <h3>Casts</h3>
+                            <div class="detail-item-box">
+                                <h4>Tom Holland, Michael Keaton, Robert Dow..</h4>
+                            </div>
+                        </div>
+                        <div class="detail-item2">
+                            <div class="duration-hour">
+                                <h3>Duration Hour</h3>
+                                <div class="detail-item-box half">
+                                    <h4>2</h4>
+                                </div>
+                            </div>
+                            <div class="duration-minute">
+                                <h3>Duration Minute</h3>
+                                <div class="detail-item-box half">
+                                    <h4>13</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-movie-synopsis">
+                    <h2>Synopsis</h2>
+                    <div class="synopsis-desc">
+                        <p>Thrilled by his experience with the Avengers, Peter returns home, where he
+                            lives with his Aunt May, | </p>
+                    </div>
+                </div>
+                <div class="form-movie-btn">
+                    <button class="reset">Reset</button>
+                    <button class="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-movie">
+            <div class="nav-data-movie">
+                <div class="nav-data-movie-title">
+                    <h1>Data Movie</h1>
+                </div>
+                <div class="nav-data-movie-sort">
+                    <select name="" id="">
+                        <option value="">Sort</option>
+                    </select>
+                </div>
+                <div class="nav-data-movie-search">
+                    <input type="text" placeholder="Search Movie Name ...">
+                </div>
+            </div>
+            <div class="data-movie-box">
+                <div class="data-movie-box-item">
+                    <div class="data-movie-box-item-image">
+                        <img src="./assets/black widow.png" alt="black widow">
+                    </div>
+                    <div class="data-movie-box-item-title">
+                        <h2>Black Widow</h2>
+                        <h4>Action, Adventure, Sci-Fi</h4>
+                    </div>
+                    <div class="btn-update-delete">
+                        <button class="update">Update</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="data-movie-box-item">
+                    <div class="data-movie-box-item-image">
+                        <img src="./assets/black widow.png" alt="black widow">
+                    </div>
+                    <div class="data-movie-box-item-title">
+                        <h2>Black Widow</h2>
+                        <h4>Action, Adventure, Sci-Fi</h4>
+                    </div>
+                    <div class="btn-update-delete">
+                        <button class="update">Update</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="data-movie-box-item">
+                    <div class="data-movie-box-item-image">
+                        <img src="./assets/black widow.png" alt="black widow">
+                    </div>
+                    <div class="data-movie-box-item-title">
+                        <h2>Black Widow</h2>
+                        <h4>Action, Adventure, Sci-Fi</h4>
+                    </div>
+                    <div class="btn-update-delete">
+                        <button class="update">Update</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="data-movie-box-item">
+                    <div class="data-movie-box-item-image">
+                        <img src="./assets/black widow.png" alt="black widow">
+                    </div>
+                    <div class="data-movie-box-item-title">
+                        <h2>Black Widow</h2>
+                        <h4>Action, Adventure, Sci-Fi</h4>
+                    </div>
+                    <div class="btn-update-delete">
+                        <button class="update">Update</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="data-movie-box-item">
+                    <div class="data-movie-box-item-image">
+                        <img src="./assets/black widow.png" alt="black widow">
+                    </div>
+                    <div class="data-movie-box-item-title">
+                        <h2>Black Widow</h2>
+                        <h4>Action, Adventure, Sci-Fi</h4>
+                    </div>
+                    <div class="btn-update-delete">
+                        <button class="update">Update</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="data-movie-box-item">
+                    <div class="data-movie-box-item-image">
+                        <img src="./assets/black widow.png" alt="black widow">
+                    </div>
+                    <div class="data-movie-box-item-title">
+                        <h2>Black Widow</h2>
+                        <h4>Action, Adventure, Sci-Fi</h4>
+                    </div>
+                    <div class="btn-update-delete">
+                        <button class="update">Update</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="data-movie-box-item">
+                    <div class="data-movie-box-item-image">
+                        <img src="./assets/black widow.png" alt="black widow">
+                    </div>
+                    <div class="data-movie-box-item-title">
+                        <h2>Black Widow</h2>
+                        <h4>Action, Adventure, Sci-Fi</h4>
+                    </div>
+                    <div class="btn-update-delete">
+                        <button class="update">Update</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="data-movie-box-item">
+                    <div class="data-movie-box-item-image">
+                        <img src="./assets/black widow.png" alt="black widow">
+                    </div>
+                    <div class="data-movie-box-item-title">
+                        <h2>Black Widow</h2>
+                        <h4>Action, Adventure, Sci-Fi</h4>
+                    </div>
+                    <div class="btn-update-delete">
+                        <button class="update">Update</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="data-movie-pages">
+                <div class="pages-box active">1</div>
+                <div class="pages-box">2</div>
+                <div class="pages-box">3</div>
+                <div class="pages-box">4</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="Tickitz">
+                <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="footer-explore">
+                <span>Explore</span>
+                <ul>
+                    <li>Home</li>
+                    <li>List Movie</li>
+                </ul>
+            </div>
+            <div class="footer-sponsor">
+                <span>Our Sponsor</span>
+                <ul>
+                    <li><img src="./assets/ebv.id.png" alt="ebv.id"></li>
+                    <li><img src="./assets/cineone21.png" alt="cineone21"></li>
+                    <li><img src="./assets/hiflix.png" alt="hiflix"></li>
+                </ul>
+            </div>
+            <div class="footer-follow">
+                <span>Follow Us</span>
+                <ul>
+                    <li>
+                        <div><i data-feather="facebook"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="instagram"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="twitter"></i></div>
+                        <div>tickitz.id</div>
+                    </li>
+                    <li>
+                        <div><i data-feather="youtube"></i></div>
+                        <div>Tickitz Cinema id</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2020 Tickitz. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>

@@ -7,6 +7,23 @@
     <title>Sign In</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .alert, .alert-warning {
+            border: 1px solid green;
+            background: rgb(220, 255, 220);
+            border-radius: 10px;
+            padding: 10px 20px;
+            width: 85%;
+            display: none;
+        }
+        .alert-login {
+            flex: 1;
+        }
+        .alert-warning {
+            border-color: red;
+            background: rgb(255, 211, 211);
+        }
+    </style>
 </head>
 <body>
     <section class="tickitz-page">
@@ -30,7 +47,11 @@
                 </div>
             </div>
             <div class="tickitz-form">
-                <!-- <form action=""> -->
+                <div id="alert" class="alert">
+                    <div id="alert-login" class="alert-login">Login</div>
+                    <div><button id="close-btn"></button></div>
+                </div>
+                <form id="login-form">
                     <label for="email">Email</label><br>
                     <input type="email" name="email" id="email" placeholder="Write your email"><br>
                     <label for="password">Password</label><br>
@@ -41,9 +62,9 @@
                         </div>
                     </div>
                     <div class="tickitz-btn">
-                        <a href="home-myaccount.html"><button type="submit">Sign In</button></a>
+                        <button type="submit">Sign In</button>
                     </div>
-                <!-- </form> -->
+                </form>
             </div>
             <div class="tickit-question">
                 <span>Forgot your password? </span>
@@ -60,4 +81,34 @@
         feather.replace()
     </script>
 </body>
+<script>
+    const alertElement = document.getElementById('alert');
+    const closeBtn = document.getElementById('close-btn');
+    const alertLogin = document.getElementById('alert-login');
+    const formLogin = document.getElementById('login-form');
+    formLogin.addEventListener('submit', (event) => {
+        if (event.target.email.value === 'admin@mail.com' && event.target.password.value === '1234') {
+            alertElement.innerHTML = '';
+            alertElement.prepend(alertLogin);
+            alertElement.setAttribute('class', 'alert');
+            alertLogin.innerHTML = 'Login Berhasil';
+            alertElement.style.display = 'flex';
+            setTimeout(() => {
+                window.location = '/home-myaccount.html';
+            }, 1000);
+        } else {
+            alertElement.innerHTML = '';
+            alertElement.prepend(alertLogin);
+            alertElement.append(closeBtn);
+            alertElement.setAttribute('class', 'alert-warning');
+            alertLogin.innerHTML = 'Login Gagal';
+            closeBtn.innerHTML = 'x';
+            alertElement.style.display = 'flex';
+        }
+        closeBtn.addEventListener('click', () => {
+            alertElement.style.display = 'none';
+        });
+        event.preventDefault();
+    });
+</script>
 </html>

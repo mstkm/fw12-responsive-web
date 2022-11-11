@@ -13,7 +13,7 @@
             background: rgb(220, 255, 220);
             border-radius: 10px;
             padding: 10px 20px;
-            width: 85%;
+            width: 380px;
             display: none;
         }
         .alert-login {
@@ -22,6 +22,12 @@
         .alert-warning {
             border-color: red;
             background: rgb(255, 211, 211);
+        }
+
+        @media (max-width: 768px) {
+            .alert, .alert-warning {
+            width: 92%;
+            }
         }
     </style>
 </head>
@@ -47,9 +53,11 @@
                 </div>
             </div>
             <div class="tickitz-form">
-                <div id="alert" class="alert">
-                    <div id="alert-login" class="alert-login">Login</div>
-                    <div><button id="close-btn"></button></div>
+                <div class="alert-container">
+                    <div id="alert" class="alert">
+                        <div id="alert-login" class="alert-login">Login</div>
+                        <div><button id="close-btn"></button></div>
+                    </div>
                 </div>
                 <form id="login-form">
                     <label for="email">Email</label><br>
@@ -95,7 +103,7 @@
             alertElement.style.display = 'flex';
             setTimeout(() => {
                 window.location = '/home-myaccount.html';
-            }, 1000);
+            }, 5000);
         } else {
             alertElement.innerHTML = '';
             alertElement.prepend(alertLogin);

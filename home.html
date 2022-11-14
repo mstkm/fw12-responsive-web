@@ -127,7 +127,7 @@
                     <h1>Black Widow</h1>
                     <p>Action, Adventure, Sci-Fi</p>
                     <div class="btn-details">
-                        <button>Details</button>
+                        <a href="movie-details.html"><button>Details</button></a>
                     </div>
                 </div>
             </div>
@@ -206,31 +206,31 @@
                 title: 'The Witches',
                 picture: './assets/witches.png',
                 genre: 'Adventure, Comedy, Family',
-                link: './details.html?id=1'
+                link: 'movie-details.html'
             },
             {
                 title: 'Tenet',
                 picture: './assets/tenet.png',
                 genre: 'Action, Sci-Fi',
-                link: './details.html?id=2'
+                link: 'movie-details.html'
             },
             {
                 title: 'Black Widow',
                 picture: './assets/black widow.png',
                 genre: 'Action, Adventure, Sci-Fi',
-                link: './details.html?id=3'
+                link: 'movie-details.html'
             },
             {
                 title: 'John Wick 3',
                 picture: './assets/john wick 3.png',
                 genre: 'Action, Crime, Thriller',
-                link: './details.html?id=4'
+                link: 'movie-details.html'
             },
             {
                 title: 'Spiderman',
                 picture: './assets/spiderman.png',
                 genre: 'Action, Hero, Sci-Fi',
-                link: './details.html?id=5'
+                link: 'movie-details.html'
             },
         ];
 
@@ -262,6 +262,10 @@
             const btnDetails = document.createElement('button');
             btnDetails.textContent = 'Details';
             btnWrapper.appendChild(btnDetails);
+
+            btnDetails.addEventListener('click', () => {
+                window.location = data.link;
+            })
 
             wrapperItem.appendChild(card);
 

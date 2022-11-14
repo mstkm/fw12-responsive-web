@@ -120,7 +120,7 @@
                 <button>Agustus</button>
             </div>
         </div>
-        <div class="upcoming-movies-list">
+        <div id="wrap" class="upcoming-movies-list">
             <div class="card-image-title">
                 <img src="./assets/black widow.png" alt="Black Widow">
                 <div class="title">
@@ -131,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-image-title">
+            <!-- <div class="card-image-title">
                 <img src="./assets/witches.png" alt="The Witches">
                 <div class="title">
                     <h1>The Witches</h1>
@@ -170,7 +170,7 @@
                         <button>Details</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -238,6 +238,75 @@
 
     <script>
         feather.replace()
+
+        const wrapperItem = document.getElementById('wrap');
+        
+        const item = [
+            {
+                title: 'The Witches',
+                picture: './assets/witches.png',
+                genre: 'Adventure, Comedy, Family',
+                link: './details.html?id=1'
+            },
+            {
+                title: 'Tenet',
+                picture: './assets/tenet.png',
+                genre: 'Action, Sci-Fi',
+                link: './details.html?id=2'
+            },
+            {
+                title: 'Black Widow',
+                picture: './assets/black widow.png',
+                genre: 'Action, Adventure, Sci-Fi',
+                link: './details.html?id=3'
+            },
+            {
+                title: 'John Wick 3',
+                picture: './assets/john wick 3.png',
+                genre: 'Action, Crime, Thriller',
+                link: './details.html?id=4'
+            },
+            {
+                title: 'Spiderman',
+                picture: './assets/spiderman.png',
+                genre: 'Action, Hero, Sci-Fi',
+                link: './details.html?id=5'
+            },
+        ];
+
+        item.forEach((data) => {
+            const card = document.createElement('div');
+            card.className = 'card-image-title';
+
+            const img = document.createElement('img');
+            img.src = data.picture;
+            img.alt = 'image';
+            card.appendChild(img);
+
+            const detail = document.createElement('div');
+            detail.className = 'title';
+            card.appendChild(detail);
+
+            const title = document.createElement('h1');
+            title.textContent = data.title;
+            detail.appendChild(title);
+
+            const genre = document.createElement('p');
+            genre.textContent = data.genre;
+            detail.appendChild(genre);
+
+            const btnWrapper = document.createElement('div');
+            btnWrapper.className = 'btn-details';
+            detail.appendChild(btnWrapper);
+
+            const btnDetails = document.createElement('button');
+            btnDetails.textContent = 'Details';
+            btnWrapper.appendChild(btnDetails);
+
+            wrapperItem.appendChild(card);
+
+        })
+
       </script>
 </body>
 </html>

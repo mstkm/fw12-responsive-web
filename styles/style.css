@@ -4080,6 +4080,7 @@ div.profile-btn-logout {
 
     .ticket-result-mobile-wrap {
         display: flex;
+        width: 250px;
         flex-direction: column;
         align-items: center;
         background: #FFFFFF;
@@ -4869,6 +4870,7 @@ div.profile-btn-logout {
 
     .ticket-result-mobile-wrap {
         display: flex;
+        width: 250px;
         flex-direction: column;
         align-items: center;
         background: #FFFFFF;

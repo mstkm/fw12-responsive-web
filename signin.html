@@ -65,7 +65,7 @@
                     <label for="password">Password</label><br>
                     <div class="tickitz-form-eye-wrapper">
                         <input type="password" name="password" id="password" placeholder="Write your password">
-                        <div class="tickitz-form-eye-icon">
+                        <div id="icon" class="tickitz-form-eye-icon" data-clicked="false">
                             <i data-feather="eye"></i>
                         </div>
                     </div>
@@ -88,35 +88,6 @@
     <script>
         feather.replace()
     </script>
+    <script src="./scripts/script.js"></script>
 </body>
-<script>
-    const alertElement = document.getElementById('alert');
-    const closeBtn = document.getElementById('close-btn');
-    const alertLogin = document.getElementById('alert-login');
-    const formLogin = document.getElementById('login-form');
-    formLogin.addEventListener('submit', (event) => {
-        if (event.target.email.value === 'admin@mail.com' && event.target.password.value === '1234') {
-            alertElement.innerHTML = '';
-            alertElement.prepend(alertLogin);
-            alertElement.setAttribute('class', 'alert');
-            alertLogin.innerHTML = 'Login Berhasil';
-            alertElement.style.display = 'flex';
-            setTimeout(() => {
-                window.location = '/home-myaccount.html';
-            }, 5000);
-        } else {
-            alertElement.innerHTML = '';
-            alertElement.prepend(alertLogin);
-            alertElement.append(closeBtn);
-            alertElement.setAttribute('class', 'alert-warning');
-            alertLogin.innerHTML = 'Login Gagal';
-            closeBtn.innerHTML = 'x';
-            alertElement.style.display = 'flex';
-        }
-        closeBtn.addEventListener('click', () => {
-            alertElement.style.display = 'none';
-        });
-        event.preventDefault();
-    });
-</script>
 </html>

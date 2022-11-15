@@ -34,6 +34,10 @@ body {
     height: 100vh;
 }
 
+.tickitz-header-logo {
+    display: none;
+}
+
 .tickitz-banner-logo img {
     height: 190px;
     width: 500px;
@@ -3411,6 +3415,10 @@ div.profile-btn-logout {
         flex-direction: column;
     }
 
+    .tickitz-header-logo {
+        display: block;
+    }
+
     .tickitz-header-logo img {
         width: 50%;
     }
@@ -4270,6 +4278,10 @@ div.profile-btn-logout {
         flex-direction: column;
     }
 
+    .tickitz-header-logo {
+        display: block;
+    }
+
     .tickitz-header-logo img {
         width: 50%;
     }
@@ -5067,10 +5079,6 @@ div.profile-btn-logout {
         font-size: 200%;
     }
 
-    .tickitz-header-logo {
-        display: none;
-    }
-
     .tickitz-header-text h1 {
         font-weight: 600;
         font-size: 30px;
@@ -5353,10 +5361,6 @@ div.profile-btn-logout {
 /* // Large devices (desktops, less than 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     /* ----- Start Tickitz Main Page ----- */
-    .tickitz-header-logo {
-        display: none;
-    }
-
     .tickitz-banner-logo img, .tickitz-banner-logo.forgot-password img {
         width: 60%;
         height: auto;
@@ -5380,10 +5384,6 @@ div.profile-btn-logout {
 /* // X-Large devices (large desktops, less than 1400px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) { 
     /* ----- Start Tickitz Main Page ----- */
-    .tickitz-header-logo {
-        display: none;
-    }
-
     .tickitz-banner-logo img, .tickitz-banner-logo.forgot-password img {
         width: 60%;
         height: auto;

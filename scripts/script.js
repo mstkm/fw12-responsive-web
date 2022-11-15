@@ -1,4 +1,5 @@
-if (window.location.pathname.endsWith('signin.html') || window.location.href.endsWith('/')) {
+// Script Sign In Page //
+if (window.location.pathname.endsWith('signin.html')) {
     const alertElement = document.getElementById('alert');
     const closeBtn = document.getElementById('close-btn');
     const alertLogin = document.getElementById('alert-login');
@@ -43,7 +44,11 @@ if (window.location.pathname.endsWith('signin.html') || window.location.href.end
             icon.dataset.clicked = 'false';
         }    
     })
-} else {
+} 
+// Script Home Page //
+else if (window.location.href.endsWith('home.html') || window.location.href == 
+"https://roaring-seahorse-f3d962.netlify.app/") {
+    
     const wrapperItem = document.getElementById('wrap');
         
     const item = [

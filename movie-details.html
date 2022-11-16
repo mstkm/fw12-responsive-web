@@ -62,40 +62,40 @@
     <section class="desc-movie">
         <div>
             <div class="desc-banner">
-                <img src="./assets/spiderman.png" alt="Spiderman">
+                <img id="gambar" alt="image">
             </div>
         </div>
         
         <div class="desc-details">
             <div class="desc-details-title">
-                <h1>Spider-Man: Homecoming</h1>
-                <h2>Adventure, Action, Sci-Fi</h2>
+                <h1 id="judul"></h1>
+                <h2 id="genre"></h2>
             </div>
             <div class="desc-flex-col">
                 <div class="desc-flec-row">
                     <div class="desc-flex-item1">
                         <p class="grey">Release date</p>
-                        <p class="black">June 28, 2017</p>
+                        <p id="released" class="black"></p>
                     </div>
                     <div class="desc-flex-item2">
                         <p class="grey">Directed by</p>
-                        <p class="black">Jon Watss</p>
+                        <p id="director" class="black"></p>
                     </div>
                 </div>
                 <div class="desc-flec-row">
                     <div class="desc-flex-item1">
                         <p class="grey">Duration</p>
-                        <p class="black">2 hours 13 minutes </p>
+                        <p id="runtime" class="black"></p>
                     </div>
                     <div class="desc-flex-item2">
                         <p class="grey">Casts</p>
-                        <p class="black">Tom Holland, Michael Keaton, Robert Downey Jr., ...</p>
+                        <p id="actors" class="black"></p>
                     </div>
                 </div>
             </div>
             <div class="desc-synopsis">
                 <h3>Synopsis</h3>
-                <p>Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened. </p>
+                <p id="plot"></p>
             </div>
         </div>
     </section>
@@ -337,6 +337,7 @@
 
     <script>
         feather.replace()
-      </script>
+    </script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

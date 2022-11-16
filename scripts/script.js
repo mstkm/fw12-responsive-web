@@ -121,4 +121,33 @@ else if (window.location.href.endsWith('home.html') || window.location.href ==
 
     })
 }
+// Script Movie Details Page //
+else if (window.location.href.endsWith('movie-details.html') || window.location.pathname.endsWith('movie-details.html')) {
+    const gambar = document.getElementById('gambar');
+    const judul = document.getElementById('judul');
+    const genre = document.getElementById('genre');
+    const released = document.getElementById('released');
+    const runtime = document.getElementById('runtime');
+    const director = document.getElementById('director');
+    const actors = document.getElementById('actors');
+    const plot = document.getElementById('plot');
+
+    const getMovie = fetch('https://omdbapi.com/?t=tenet&apikey=254f0379');
+    const getData = async () => {
+        const response = await getMovie;
+        const data = await response.json();
+        const {Poster, Title, Genre, Released, Runtime, Plot, Director, Actors} = data;
+        
+        gambar.setAttribute('src', Poster);
+        judul.innerText = Title;
+        genre.innerText = Genre;
+        released.innerText = Released;
+        runtime.innerText = Runtime;
+        director.innerText = Director;
+        actors.innerText = Actors;
+        plot.innerText = Plot;
+    }
+
+    getData();
+}
 

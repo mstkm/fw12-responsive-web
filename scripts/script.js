@@ -132,7 +132,7 @@ else if (window.location.href.endsWith('movie-details.html') || window.location.
     const actors = document.getElementById('actors');
     const plot = document.getElementById('plot');
 
-    const getMovie = fetch('https://omdbapi.com/?t=tenet&apikey=254f0379');
+    const getMovie = fetch('https://www.omdbapi.com/?t=tenet&plot=full&apikey=254f0379');
     const getData = async () => {
         const response = await getMovie;
         const data = await response.json();

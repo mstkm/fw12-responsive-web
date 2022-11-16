@@ -47,7 +47,7 @@ if (window.location.pathname.endsWith('signin.html')) {
 } 
 // Script Home Page //
 else if (window.location.href.endsWith('home.html') || window.location.href == 
-"https://roaring-seahorse-f3d962.netlify.app/") {
+"https://roaring-seahorse-f3d962.netlify.app/" || window.location.href.endsWith('home-myaccount.html')) {
     
     const wrapperItem = document.getElementById('wrap');
         

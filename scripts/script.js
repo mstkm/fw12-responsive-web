@@ -60,7 +60,9 @@ const dataEndPoint = [
     'https://www.omdbapi.com/?t=black+panther+wakanda+forever&plot=full&apikey=254f0379',
     'http://www.omdbapi.com/?t=john+wick+chapter+3&plot=full&apikey=254f0379',
     'http://www.omdbapi.com/?t=enola+holmes+2&plot=full&apikey=254f0379',
-    'https://www.omdbapi.com/?t=satria+dewa&plot=full&apikey=254f0379'
+    'https://www.omdbapi.com/?t=satria+dewa&plot=full&apikey=254f0379',
+    'https://omdbapi.com/?t=hansan&plot=full&apikey=254f0379',
+    'https://www.omdbapi.com/?t=fistful+of+vengeance&plot=full&apikey=254f0379'
 ];
 
 // // Script Home Page // //
